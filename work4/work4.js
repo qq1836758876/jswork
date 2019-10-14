@@ -26,4 +26,4 @@ for(let i=1;i<=level;++i){
      str += '</tr>'
  }
  str += '</table>'
- document.getElementById('table').innerHTML = str 
+ document.getElementById('table').innerHTML = str
