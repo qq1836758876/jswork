@@ -6,6 +6,7 @@ for(let i=9;i>0;--i){
     }
     str+='</tr>'
 }
+
 str+='</table>'
 document.getElementById('table2').innerHTML=str
 
