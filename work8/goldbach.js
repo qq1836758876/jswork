@@ -1,25 +1,29 @@
-
-        function yueshu(a){
-            var count=0
-            for(var i=1; i<=a; i++){
-                if(a%i==0){
-                    count++
-                }
-            }
-            return count
-        }
-        function iszhishu(b){
-            if(yueshu(b)==2){
-                return true
-            }else{
-                return false
+function goldbach() {
+    var value = document.getElementById('odd').value
+    if(value%2!==0){
+        alert("请输入偶数")
+    }
+    let goldbach = document.getElementById('goldbach')
+    var arr =[]
+    var a = 0;
+    for(var i=2;i<=value;i++){
+        a = 0
+        for(var j=2;j<i;j++){
+            if(i%j==0){
+                a++
             }
         }
-        for(var i=4; i<=100; i+=2){
-            for(var j=2; j<i; j++){
-                if(iszhishu(j)&&iszhishu(i-j)){
-                    console.log(i+"可以拆分为"+j+"与"+(i-j))
-                }
-            }
+        if(a==0){
+            arr.push(i)
         }
-        
+    }
+    var str = ' '
+    for(let i=0;i<(arr.length)/2;i++){
+     for(let j=0;j<arr.length;j++){
+      if((arr[i]+arr[j])===Number(value)){
+       str += '<div>'+value+"可拆为两个质数"+arr[i]+"与"+arr[j]+"的和"+ '</div>'
+    }
+  } 
+ }
+    goldbach.innerHTML = str
+}
