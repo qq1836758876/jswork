@@ -29,7 +29,7 @@ function stat(){
     let obj = {}
     let a = str.split("")
     a = a.sort()
-    for (let i = 0; i < str.length; ++i) {
+    for (let i = 0; i < str.length; i++) {
       let cc = a[i]
         obj[cc] = (obj [cc] + 1) || 1;
             
