@@ -45,7 +45,7 @@
                 return '<select ' + attr +'>' + html + '</select>';
             },
             textarea: function(attr){
-                return '<textarea ' + attr + '></textarea>';
+                return '<textarea ' +attr+'></textarea>';
             }
         }
     };

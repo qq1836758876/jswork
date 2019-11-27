@@ -1,4 +1,4 @@
-body{
+body {
     text-align: center;
 }
 
@@ -7,11 +7,11 @@ body{
     width: 720px;
 }
 
-.preyear{
-    float: left; 
+.preyear {
+    float: left;
 }
 
-.nextyear {
+.nextyear{
     float: right;
 }
 
@@ -20,11 +20,15 @@ body{
     width: 720px;
 }
 
-table{
+.title{
+    background:  red;
+}
+
+table {
     height: 160px;
     width: 160px;
     font-size: 12px;
-    text-align: 12px;
+    text-align: center;
     float: left;
     margin: 10px;
     font-family: arial;
