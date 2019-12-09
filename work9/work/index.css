@@ -1,0 +1,105 @@
+.cart {
+    width: 700px;
+    padding: 0 10px 10x;
+    border: 1px solid #d5e5f5;
+}
+
+.cart-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #aed2ff;
+    line-height: 30px;
+    height: 30;
+    font-weight: 700;
+    text-indent:15px;
+    color: #333;
+    font-family: "Microsoft YaHei";
+}
+
+.cart-table {
+    widows: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 12px;
+    font-family: Verdana,"Microsoft YaHei";
+    color: #333;
+}
+
+.cart-table th {
+    border-bottom: 2px solid #b2d1ff;
+    font-weight: normal;
+    height: 35px;
+    line-height: 23px;
+}
+
+.cart-item {
+    background-color: #fafcff;
+    border-bottom: 1px dotted #84b3fd;
+}
+
+.cart-item td {
+    height: 55px;
+    text-align: center;
+}
+
+.cart-item .cart-txt-left {
+    text-align: left;
+}
+
+.cart-name {
+    color: #3366d4;
+    font-weight: bold;
+}
+
+.cart-subtotal {
+    color: #ff3334;
+    font-weight: bold;
+}
+
+.cart-reduce,
+.cart-add {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #bdbdbd;
+    border:0;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: 'Arial';
+    font-size: 13.3333px;
+}
+
+.cart-reduce:hover,
+.cart-add:hover {
+    background-color: #ff9900;
+}
+
+.cart-num {
+    margin: 5px;
+    width: 35px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 3px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #bbb;
+}
+
+.cart-del,
+.cart-all {
+    color: #3366d4;
+}
+
+.cart-del:hover,
+.cart-all:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cart-bottom {
+    height: 55px;
+    text-align: right
+}

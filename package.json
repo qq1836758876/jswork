@@ -15,9 +15,9 @@
     "url": "https://github.com/qq1836758876/jswork/issues"
   },
   "homepage": "https://github.com/qq1836758876/jswork#readme",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
-  }
+  },
+  "description": ""
 }
