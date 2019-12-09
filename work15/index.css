@@ -51,7 +51,7 @@
     font-weight: bold;
 }
 
-.cart-subtotal {
+.cart-subtotal{
     color: #ff3334;
     font-weight: bold;
 }
@@ -89,14 +89,17 @@
 }
 
 .cart-del,
-.cart-all {
+.cart-all{
     color: #3366d4;
 }
+
 .cart-unall {
     color: red;
 }
+
 .cart-del:hover,
-.cart-all:hover {
+.cart-all:hover,
+.cart-unall:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -116,6 +119,7 @@
     font-weight: bold;
     font-size: 16px;
 }
+
 .cart-bottom-btn {
     color: #fff;
     font-size: 14px;
