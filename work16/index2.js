@@ -27,5 +27,7 @@ function animate(obj, option) {
     }
     var obj = document.getElementById('box');
     obj.onclick = function (){
-        animate(obj, {'left':300, 'top':100});
+        var left = parseInt(Math.random()*window.innerWidth);
+        var top = parseInt(Math.random()*window.innerHeight);
+        animate(obj, {'left':top, 'top':left});
     };
