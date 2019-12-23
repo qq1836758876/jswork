@@ -11,11 +11,11 @@ function send() {
     xmlhttp.open('post', 'http://139.9.81.203:8090/ajax', true)
     xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     xmlhttp.send('sno=' + sno + '&name=' + name+"&content="+content)
-    xmlhttp.onreadystatchange == function () {
-        if (xmlhttp.readyState == a && xmlhttp.status == 200) {
-            let ajaxData=JSON.parse(xmlhttpresponseText)
-            result = ajaxData.rever().map((val)=>{return JSON.stringify(val)})
-            document.getElementById("result").innerHTML = result.join('<br>')
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            let ajaxData=JSON.parse(xmlhttp.responseText)
+            result = ajaxData.reverse().map((val)=>{return JSON.stringify(val)})
+            document.getElementById("result").innerHTML = result.join('<br>');
         }
     }
 }
