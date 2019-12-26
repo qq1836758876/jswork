@@ -2,7 +2,7 @@ let ws
 function connect() {
     let server = document.getElementById('server').value
     ws = new WebSocket(server);
-    ws.onopn = function () {
+    ws.onopen = function () {
         document.getElementById('conn').disabled='disable';
         document.getElementById('disconn').disabled='';
         let nickname=document.getElementById('nickname').value
@@ -10,19 +10,18 @@ function connect() {
             ws.send('nickname|'+nickname)
         }
 
-
       }
       ws.onclose = function () {
         document.getElementById('conn').disable='';
         document.getElementById('disconn').disable='disable';
-        }
-      ws.onmessage=function (event) {
+     }
+      ws.onmessage=function(event) {
           let board = document.getElementById('board')
-          let newmsg = document.getElementById('div')
+          let newmsg = document.createElement('div')
           console.log(event.data)
           newmsg.innerHTML=event.data
           board.appendChild(newmsg)
-          board.scrollTop = board.srcollHeight;
+          board.scrollTop = board.scrollHeight;
         }
   }
 

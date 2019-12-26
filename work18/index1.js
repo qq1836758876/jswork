@@ -28,6 +28,7 @@
         this.last.disabled=(this.page>=this.maxPage);
         this.pageNum.innerHTML=this.page;
     };
+
     function Comment(obj){
         this.obj=obj;
     }
@@ -61,6 +62,7 @@
         }
         this.obj.innerHTML = html;
     };
+    
     function ProgressBar(container){
         this.container=container;
         this.div = document.createElement('div');
