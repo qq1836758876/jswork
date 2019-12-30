@@ -1,4 +1,4 @@
-$('#fold>ul>first').find('wrap').css({
+$('#fold>ul>li:first').find('wrap').css({
     display: 'block'
 });
 
